@@ -1,12 +1,12 @@
-# mkpwd
+# mkpass
 Rudimentary command-line password generator.
 
 ## Usage
 
-By default, invoking mkpwd will generate a single 10-character password:
+By default, invoking mkpass will generate a single 10-character password:
 
 ```
-$ mkpwd
+$ mkpass
 T8aExxlC89
 $ 
 ```
@@ -14,7 +14,7 @@ $
 Use the `-n` flag to control how many passwords are generated:
 
 ```
-$ mkpwd -n 5
+$ mkpass -n 5
 NY26BCQ8gn
 ACdNYEzAQ4
 YlCXkT1GRn
@@ -26,7 +26,7 @@ $
 Use the `-l` flag to control the length of the generated passwords:
 
 ```
-$ mkpwd -l 20
+$ mkpass -l 20
 dFsVHalFJEcriN7S3Hfh
 $
 ```

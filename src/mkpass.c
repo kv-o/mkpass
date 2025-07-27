@@ -15,7 +15,7 @@ randchar(void)
 }
 
 char*
-mkpwd(size_t len)
+mkpass(size_t len)
 {
 	int i = 0;
 	char *password = malloc(len + 1);
@@ -50,7 +50,7 @@ main(int argc, char *argv[])
 		nflag = 2;
 		lflag = 4;
 	} else if (argc != 1) {
-		fprintf(stderr, "mkpwd: invalid invocation\n");
+		fprintf(stderr, "mkpass: invalid invocation\n");
 		return 1;
 	}
 
@@ -59,14 +59,14 @@ main(int argc, char *argv[])
 	if (nflag != 0)
 		num = atoi(argv[nflag]);
 	if (len == 0 || num == 0) {
-		fprintf(stderr, "mkpwd: invalid invocation\n");
+		fprintf(stderr, "mkpass: invalid invocation\n");
 		return 1;
 	}
 
 	for (i = 0; i < num; i++) {
-		password = mkpwd(len);
+		password = mkpass(len);
 		if (password == NULL) {
-			fprintf(stderr, "mkpwd: out of memory\n");
+			fprintf(stderr, "mkpass: out of memory\n");
 			return 1;
 		}
 		printf("%s\n", password);

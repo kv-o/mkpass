@@ -1,10 +1,10 @@
-COMMANDS                                                                   MKPWD
+COMMANDS                                                                  MKPASS
 
 NAME
-    mkpwd - make password
+    mkpass - make password
 
 INVOCATION
-    mkpwd [OPTION ...]
+    mkpass [OPTION ...]
 
 DESCRIPTION
     Generates a 10-character pseudo-random password suitable for typing on a
